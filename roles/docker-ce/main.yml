@@ -1,5 +1,7 @@
 ---
 - hosts: local
   become: true
+  vars:
+    containerd_version: containerd.io-1.4.3-3.1.el7.x86_64.rpm
   tasks:
     - include: tasks/docker_ce_centos_task.yml
