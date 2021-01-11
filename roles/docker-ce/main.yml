@@ -1,0 +1,5 @@
+---
+- hosts: local
+  become: true
+  tasks:
+    - include: tasks/docker_ce_centos_task.yml
